@@ -2,7 +2,7 @@
 
 The objective of this article is to carry out a detailed review of strategies and a solution that we can incorporate into high demand applications in the use of the Amazon Rekognition API (specifically DetectFaces) that require temporarily exceeding the service quota without incurring errors on the side. of the application, we will see it from the point of view of Architecture, as well as recommendations on handling errors in API calls.
 
-This code sample is discussed in detail in this AWS ![Blog Post](blogpos.com).
+This code sample is discussed in detail in this AWS [Blog Post](https://aws.amazon.com/blogs/).
 
 ### Architecture
 
@@ -52,15 +52,15 @@ cdk destroy                       		 # This comand will delete all the deployed 
 
 ### Making changes to the code and customization
 
-The ![contributing guidelines](CONTRIBUTING.md) contains some instructions about how to run the front-end locally and make changes to the back-end stack.
+The [contributing guidelines](CONTRIBUTING.md) contains some instructions about how to run the front-end locally and make changes to the back-end stack.
 
 ## Contributing
 
-Contributions are more than welcome. Please read the ![code of conduct](CODE_OF_CONDUCT.md) and the ![contributing guidelines](CONTRIBUTING.md).
+Contributions are more than welcome. Please read the [code of conduct](CODE_OF_CONDUCT.md) and the [contributing guidelines](CONTRIBUTING.md).
 
 ## Licensing
 
-See the ![LICENSE](LICENSE) file for our project's licensing. We will ask you to confirm the licensing of your contribution.
+See the [LICENSE](LICENSE) file for our project's licensing. We will ask you to confirm the licensing of your contribution.
 
-We may ask you to sign a ![Contributor License Agreement (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) for larger changes.
+We may ask you to sign a [Contributor License Agreement (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) for larger changes.
 
