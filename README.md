@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+# Amazon Rekognition Large Scale Processing
 
-# Welcome to your CDK Python project!
+The objective of this article is to carry out a detailed review of strategies and a solution that we can incorporate into high demand applications in the use of the Amazon Rekognition API (specifically DetectFaces) that require temporarily exceeding the service quota without incurring errors on the side. of the application, we will see it from the point of view of Architecture, as well as recommendations on handling errors in API calls.
 
-This is a blank project for Python development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+This code sample is discussed in detail in this AWS ![Blog Post](blogpos.com).
 
 ### Architecture
 
@@ -14,53 +12,55 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 #### Prerequisites
 
-- A AWS Account 
+- An AWS Account 
 - AWS CDK for Python
-- Python 3.6 or latter
+- AWS CLI configured with access creadentials
+- Python 3.6+
 - IAM Privileges to deploy the components of the architecture
 
 #### Deployment
+
+1 - Clone the code of thi repository. 
+
+2 - Proceed with the following commands in the Terminal. 
+
 ```
-$ npm install -g aws-cdk
-$ cd <Mod>
-$ pip install -r requirements.txt    # Best to do this in a virtualenv
-$ cdk deploy                         # Deploys the CloudFormation template
+npm install -g aws-cdk
+cd amazon-rekognition-large-scale-processing
+python3 -m venv .env
+source .env/bin/activate
+pip install -r requirements.txt
+cdk deploy
 ```
 
+3 - Check the correct deployment: The result from the last section is the AWS S3 bucket in wich to upload the images, the results of the image processing will be available in the AWS DynamoDB Table ```detect_faces_results```
+
 #### Cleanup
+
+In order to delete all the components deployed by this solution and avoid additional charges:
+
+1 - Proceed with the following commands in the Terminal.
+
 ```
-cd <Mod>
-$ cdk destroy                        # This comand will delete all the deployed resources
+cd amazon-rekognition-large-scale-processing
+cdk destroy                       		 # This comand will delete all the deployed resources
 ```
+
+2 - Delete the AWS DynamoDB Table ```detect_faces_results```: Navigate to AWS DynamoDB service in the AWS Console > Look for the results table and proceed to delete the table.
+
+3 - Delete the Amazon S3 Bucket: Navigate to the Amazon S3 service in the AWS Console > Search the bucket name from the output of the deployment process and proceed to delete the bucket.
 
 ### Making changes to the code and customization
 
-The [contributing guidelines](CONTRIBUTING.md) contains some instructions about how to run the front-end locally and make changes to the back-end stack.
+The ![contributing guidelines](CONTRIBUTING.md) contains some instructions about how to run the front-end locally and make changes to the back-end stack.
 
 ## Contributing
 
-Contributions are more than welcome. Please read the [code of conduct](CODE_OF_CONDUCT.md) and the [contributing guidelines](CONTRIBUTING.md).
+Contributions are more than welcome. Please read the ![code of conduct](CODE_OF_CONDUCT.md) and the ![contributing guidelines](CONTRIBUTING.md).
 
+## Licensing
 
-## License Summary
+See the ![LICENSE](LICENSE) file for our project's licensing. We will ask you to confirm the licensing of your contribution.
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
-=======
-## My Project
+We may ask you to sign a ![Contributor License Agreement (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) for larger changes.
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
->>>>>>> d75ca528c301a365d9c9349d12fbab626a573b73
