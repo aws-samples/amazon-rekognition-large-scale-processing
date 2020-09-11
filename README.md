@@ -1,0 +1,66 @@
+<<<<<<< HEAD
+
+# Welcome to your CDK Python project!
+
+This is a blank project for Python development with CDK.
+
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
+
+### Architecture
+
+![Architecture Diagram](docs/diagram_arch.png)
+
+### Usage
+
+#### Prerequisites
+
+- A AWS Account 
+- AWS CDK for Python
+- Python 3.6 or latter
+- IAM Privileges to deploy the components of the architecture
+
+#### Deployment
+```
+$ npm install -g aws-cdk
+$ cd <Mod>
+$ pip install -r requirements.txt    # Best to do this in a virtualenv
+$ cdk deploy                         # Deploys the CloudFormation template
+```
+
+#### Cleanup
+```
+cd <Mod>
+$ cdk destroy                        # This comand will delete all the deployed resources
+```
+
+### Making changes to the code and customization
+
+The [contributing guidelines](CONTRIBUTING.md) contains some instructions about how to run the front-end locally and make changes to the back-end stack.
+
+## Contributing
+
+Contributions are more than welcome. Please read the [code of conduct](CODE_OF_CONDUCT.md) and the [contributing guidelines](CONTRIBUTING.md).
+
+
+## License Summary
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
+=======
+## My Project
+
+TODO: Fill this README out!
+
+Be sure to:
+
+* Change the title in this README
+* Edit your repository description on GitHub
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
+
+>>>>>>> d75ca528c301a365d9c9349d12fbab626a573b73
