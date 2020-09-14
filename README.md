@@ -20,7 +20,7 @@ This code sample is discussed in detail in this AWS [Blog Post](https://aws.amaz
 
 #### Deployment
 
-1 - Clone the code of thi repository. 
+1 - Clone the code in this repository. 
 
 2 - Proceed with the following commands in the Terminal. 
 
