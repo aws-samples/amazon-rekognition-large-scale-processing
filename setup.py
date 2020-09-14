@@ -1,9 +1,7 @@
 import setuptools
 
-
 with open("README.md") as fp:
     long_description = fp.read()
-
 
 setuptools.setup(
     name="rekognition_processing_app",
@@ -19,12 +17,13 @@ setuptools.setup(
     packages=setuptools.find_packages(where="rekognition_processing_app"),
 
     install_requires=[
-        "aws-cdk.core==1.61.1",
-        "aws-cdk.aws_iam==1.61.1",
-        "aws-cdk.aws_sqs==1.61.1",
-        "aws-cdk.aws_sns==1.61.1",
-        "aws-cdk.aws_sns_subscriptions==1.61.1",
-        "aws-cdk.aws_s3==1.61.1",
+        "aws-cdk.aws-s3",
+        "aws-cdk.aws-s3-notifications",
+        "aws-cdk.aws-lambda",
+        "aws-cdk.aws-lambda-event-sources",
+        "aws-cdk.aws-sqs",
+        "aws-cdk.aws-dynamodb",
+        "aws-cdk.aws-iam"
     ],
 
     python_requires=">=3.6",

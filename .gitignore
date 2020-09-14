@@ -3,6 +3,7 @@ package-lock.json
 .pytest_cache
 *.egg-info
 .idea
+source.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -23,4 +24,4 @@ venv.bak/
 cdk.out/
 
 # Test Folder
-tests
+tests/
