@@ -2,7 +2,7 @@
 
 The objective of this article is to carry out a detailed review of strategies and a solution that we can incorporate into high demand applications in the use of the Amazon Rekognition API (specifically DetectFaces) that require temporarily exceeding the service quota without incurring errors on the side. of the application, we will see it from the point of view of Architecture, as well as recommendations on handling errors in API calls.
 
-This code sample is discussed in detail in this AWS [Blog Post](https://aws.amazon.com/blogs/).
+This code sample is discussed in detail in this AWS [Blog Post](https://aws.amazon.com/es/blogs/aws-spanish/escalando-aplicaciones-de-reconocimiento-de-imagenes-con-amazon-rekognition/).
 
 ### Architecture
 
